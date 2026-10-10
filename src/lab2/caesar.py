@@ -40,10 +40,5 @@ def decrypt_caesar(text: str, shift: int = 3) -> str:
         elif "a" <= letter <= "z":
             result+= chr((ord(letter) - ord("a") - shift) % 26 + ord("a"))
         else:
-<<<<<<< HEAD
-            plaintext += char
-    return plaintext
-=======
             result += letter
     return result
->>>>>>> 2941bac (fixup! Implement Caesar cipher)
